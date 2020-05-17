@@ -1,0 +1,19 @@
+Azure CLI
+
+az account list --output table
+
+az group list --output table
+
+az resource list \
+--resource-group xxxx-xxxx-xxxx \
+--resource-type Microsoft.Web/sites
+
+App Service で実行されている Web アプリケーションの停止
+az webapp stop \
+--resource-group xxxx-xxxx-xxxx \
+--name <web app name>
+
+App Service で実行されている Web アプリケーションの開始
+az webapp start \
+--resource-group xxxx-xxxx-xxxx \
+--name <web app name>
